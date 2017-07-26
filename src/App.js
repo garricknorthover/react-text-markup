@@ -42,7 +42,7 @@ class MarkIt extends Component {
 
     return (
           // <div>{outValue}</div>
-        <div dangerouslySetInnerHTML={outValueHTML} />
+        <div dangerouslySetInnerHTML={outValueHTML} className="display-linebreak" />
     )
   }
 
