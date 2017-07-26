@@ -4,7 +4,7 @@ import './App.css';
 class TypeInText extends Component {
 
   state = {
-    value: ''
+    value: 'This text is #bold#'
   }
 
   handleChange = (e) => {
@@ -16,11 +16,11 @@ class TypeInText extends Component {
     const {value} = this.state
 
     return (
-      <div className="container">
-<div className="row">
-<div className="col"><textarea value={value} onChange={this.handleChange} /></div>
-<div className="col"><MarkIt value={value} /></div>
-</div>
+      <div>
+
+<textarea value={value} onChange={this.handleChange} className="In"/>
+<div><MarkIt value={value} /></div>
+
       </div>
     );
   }
@@ -42,10 +42,25 @@ class MarkIt extends Component {
 
     return (
           // <div>{outValue}</div>
-        <div dangerouslySetInnerHTML={outValueHTML} className="display-linebreak" />
+        <div dangerouslySetInnerHTML={outValueHTML}  className="Marked" />
     )
   }
 
+}
+
+class Welcome extends Component {
+  render(){
+    return (
+      <div>
+      <div className="App-header">
+        <h1>Simple Mark Up Tool</h1>
+      </div>
+      <div className="App-intro">
+        <a href="https://github.com/garricknorthover/react-text-markup">https://github.com/garricknorthover/react-text-markup</a>
+      </div>
+      </div>
+    );
+  }
 }
 
 class App extends Component {
@@ -56,6 +71,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Welcome />
         <TypeInText />
 
       </div>
