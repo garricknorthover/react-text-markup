@@ -1,6 +1,4 @@
 import React, {Component} from 'react';
-import { Grid, Navbar, Jumbotron, Button } from 'react-bootstrap';
-import logo from './logo.svg';
 import './App.css';
 
 class TypeInText extends Component {
@@ -18,49 +16,48 @@ class TypeInText extends Component {
     const {value} = this.state
 
     return (
-      <div>
-        
-          <textarea value={value} onChange={this.handleChange}/>
-          <div className="display-linebreak col">
-          <MarkIt value={value}/>
-        </div >
+      <div className="container">
+<div className="row">
+<div className="col"><textarea value={value} onChange={this.handleChange} /></div>
+<div className="col"><MarkIt value={value} /></div>
+</div>
       </div>
-    )
+    );
   }
 }
 
 class MarkIt extends Component {
 
-  render() {
 
+
+  render() {
     const outValue = this
       .props
       .value
-      .replace(/#(.\S+)#/ig, '<b>$1</b>')
+      .replace(/#(.*?)#/ig, '<b>$1</b>')
 
-    const outValueHTML = {__html: outValue} 
+
+
+    const outValueHTML = {__html: outValue}
 
     return (
-        <div dangerouslySetInnerHTML={outValueHTML} />     
+          // <div>{outValue}</div>
+        <div dangerouslySetInnerHTML={outValueHTML} />
     )
   }
 
 }
 
 class App extends Component {
+
+
+
+
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo"/>
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit
-          <code>src/App.js</code>
-          and save to reload.
-        </p>
-        <TypeInText/>
+        <TypeInText />
+
       </div>
     );
   }
