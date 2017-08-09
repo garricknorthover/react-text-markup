@@ -1,4 +1,4 @@
-#Simple React Mark-Up Tool
+# Simple React Mark-Up Tool
 This is my second attempt at making a simple mark up app with React.
 
 Or should it be mark down?
@@ -11,9 +11,9 @@ I have also read that using dangerouslySetInnerHTML is not safe. I could have us
 
 Reading can be a bummer because they also say that regular expressions are a no go for parsing mark-up (or mark-down), probably doesn't scale well.
 
-##Demo: react-markup-garrick.surge.sh
+## Demo: react-markup-garrick.surge.sh
 
-##The main code
+## The main code
 ```javascript
 import React, {Component} from 'react';
 import './App.css';
