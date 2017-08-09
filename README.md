@@ -11,7 +11,7 @@ I have also read that using dangerouslySetInnerHTML is not safe. I could have us
 
 Reading can be a bummer because they also say that regular expressions are a no go for parsing mark-up (or mark-down), probably doesn't scale well.
 
-## Demo: react-markup-garrick.surge.sh
+## Demo: [react-markup-garrick.surge.sh]
 
 ## The main code
 ```javascript
