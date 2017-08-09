@@ -3,7 +3,8 @@ import './App.css';
 
 
 
-class TypeInText extends Component {
+class TypeInText extends Component { // this is where you type in the text
+  //which triggers the onChange function which was passed down as a prop
 
   render() {
 
@@ -20,7 +21,9 @@ class TypeInText extends Component {
 
 
 
-class MarkIt extends Component {
+class MarkIt extends Component {// any changes in the value state are reflected here
+  // and passed through a regular expression  .replace(/#(.*?)#/ig, '<b>$1</b>')
+  // the resulting value is then passed to jsx through the dangerouslySetInnerHTML method
 
   render() {
 
@@ -65,7 +68,7 @@ class App extends Component {
     value: 'This text is #bold#'
   }
 
-  handleChange = (e) => {
+  handleChange = (e) => {  // this function is passed around as a prop to the child components
     this.setState({value: e.target.value})
   }
 

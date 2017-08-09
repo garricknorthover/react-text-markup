@@ -12,6 +12,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "deploy": "yarn run build && surge -p build -d mindless-horses-garrick.surge.sh"
+    "deploy": "yarn run build && surge -p build -d react-markup-garrick.surge.sh"
   }
 }
