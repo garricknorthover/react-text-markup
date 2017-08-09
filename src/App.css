@@ -1,35 +1,3 @@
 .App {
   text-align: center;
-
-
-}
-
-
-.App-header {
-  background-color: #001620;
-  height: auto;
-  padding: 20px;
-  color: white;
-}
-
-.App-intro {
-  font-size: large;
-  padding: 20px;
-}
-
-
-.Marked {
-  background-color: rgb(215, 230, 227);
-  white-space: pre-line;
-  text-align: left;
-  padding: 10px;
-  height: 300px;
-  width: 400px;
-  margin: auto;
-}
-.In {
-  height: 100px;
-  width: 400px;
-  padding: 10px;
-  margin-bottom: 30px;
 }
