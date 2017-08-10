@@ -1,3 +1,36 @@
 .App {
   text-align: center;
 }
+
+
+.App-header {
+  background-color: rgb(239, 196, 70);
+  height: auto;
+  padding: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.App-link {
+  font-size: large;
+  padding: 20px;
+}
+
+
+.Marked {
+  background-color: rgb(215, 230, 227);
+  white-space: pre-line;
+  text-align: left;
+  padding: 20px;
+  height: 300px;
+  width: 500px;
+  margin: auto;
+  margin-top: 20px;
+  font-family: 'Cutive', serif;
+  font-size: 40px;
+}
+.In {
+  height: 100px;
+  width: 400px;
+  padding: 10px;
+  margin-top: 30px;
+}

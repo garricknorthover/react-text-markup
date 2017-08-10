@@ -12,7 +12,7 @@ class TypeInText extends Component { // this is where you type in the text
 
       <div>
 
-<textarea value={this.props.value} onChange={this.props.onChange} />
+<textarea value={this.props.value} onChange={this.props.onChange} className="In" />
 
       </div>
     );
@@ -43,25 +43,6 @@ class MarkIt extends Component {// any changes in the value state are reflected 
 
 
 
-class Welcome extends Component {
-  render(){
-    return (
-      <div>
-
-      <div className="App-header">
-        <h1>Simple Mark Up Tool</h1>
-      </div>
-      <div className="App-intro">
-        <a href="https://github.com/garricknorthover/react-text-markup">https://github.com/garricknorthover/react-text-markup</a>
-      </div>
-
-      </div>
-    );
-  }
-}
-
-
-
 class App extends Component {
 
   state = {
@@ -78,9 +59,18 @@ class App extends Component {
     return (
       <div className="App">
 
-        <Welcome />
-        <TypeInText value={this.state.value} onChange={this.handleChange} />
+      <div className="App-header">
+        <h1>Simple Mark Up Tool</h1>
+      </div>
+
+
         <MarkIt value={this.state.value} />
+        <TypeInText value={this.state.value} onChange={this.handleChange} />
+
+
+        <div className="App-link">
+          <a href="https://github.com/garricknorthover/react-text-markup">https://github.com/garricknorthover/react-text-markup</a>
+        </div>
 
       </div>
     );
