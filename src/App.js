@@ -1,23 +1,6 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import './App.css';
 
-
-
-class TypeInText extends Component { // this is where you type in the text
-  //which triggers the onChange function which was passed down as a prop
-
-  render() {
-
-    return (
-
-      <div>
-
-<textarea value={this.props.value} onChange={this.props.onChange} className="In" />
-
-      </div>
-    );
-  }
-}
 
 
 
@@ -32,12 +15,27 @@ class MarkIt extends Component {// any changes in the value state are reflected 
       .value
       .replace(/#(.*?)#/ig, '<b>$1</b>')
 
-    const returnedHtml = {__html: value}
+    const returnedHtml = { __html: value }
 
     return (
 
-        <div dangerouslySetInnerHTML={returnedHtml}  className="Marked" />
+      <div dangerouslySetInnerHTML={returnedHtml} className="Marked" />
     )
+  }
+}
+class TypeInText extends Component { // this is where you type in the text
+  //which triggers the onChange function which was passed down as a prop
+
+  render() {
+
+    return (
+
+      <div>
+
+        <textarea className="In" value={this.props.value} onChange={this.props.onChange}  />
+
+      </div>
+    );
   }
 }
 
@@ -50,7 +48,7 @@ class App extends Component {
   }
 
   handleChange = (e) => {  // this function is passed around as a prop to the child components
-    this.setState({value: e.target.value})
+    this.setState({ value: e.target.value })
   }
 
 
@@ -59,13 +57,13 @@ class App extends Component {
     return (
       <div className="App">
 
-      <div className="App-header">
-        <h1>Simple Mark Up Tool</h1>
-      </div>
+        <div className="App-header">
+          <h1>Simple Mark Up Tool</h1>
+        </div>
 
 
-        <MarkIt value={this.state.value} />
-        <TypeInText value={this.state.value} onChange={this.handleChange} />
+        <div className="mark"><MarkIt value={this.state.value} /></div>
+        <div className="in"><TypeInText value={this.state.value} onChange={this.handleChange} /></div>
 
 
         <div className="App-link">

@@ -1,18 +1,35 @@
 .App {
-  text-align: center;
+  font-size: 20px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1em;
+  grid-template-areas: 
+  ". top ."
+  ". mark ."
+  ". in ."
+  ". link .";
+}
+.mark{
+  grid-area: mark;
+}
+.in{
+  grid-area: in;
+  margin: 0 auto;
 }
 
-
 .App-header {
+  grid-area: top;
   background-color: rgb(239, 196, 70);
-  height: auto;
-  padding: 20px;
+  padding: 1em;
   color: rgb(255, 255, 255);
 }
 
 .App-link {
-  font-size: large;
-  padding: 20px;
+  grid-area: link;
+  font-size: 1em;
+  text-align: center;
+  /* padding: 20px; */
 }
 
 
@@ -20,17 +37,14 @@
   background-color: rgb(215, 230, 227);
   white-space: pre-line;
   text-align: left;
-  padding: 20px;
-  height: 300px;
-  width: 500px;
-  margin: auto;
-  margin-top: 20px;
+  padding: 1em;
+  height: 8em;
   font-family: 'Cutive', serif;
-  font-size: 40px;
+  font-size: 2.5em;
 }
 .In {
-  height: 100px;
-  width: 400px;
+  height: 10em;
+  width: 20em;
   padding: 10px;
-  margin-top: 30px;
+  margin:  0 auto;
 }
