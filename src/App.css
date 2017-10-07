@@ -27,7 +27,7 @@
 .App-header {
   grid-area: top;
   font-family: 'Droid Serif', serif;
-  background-color: darkslategray;
+  background-color: coral;
   padding: 1em;
   letter-spacing: 2px;
   line-height: 1.2em;
