@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Droid+Serif|Roboto');
-
+@import url('https://fonts.googleapis.com/css?family=Cutive|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Prompt|Martel');
 
 .App {
   font-family: 'Roboto', sans-serif;
@@ -7,11 +7,11 @@
   display: grid;
   justify-content: space-around;
   grid-template-columns: 1fr auto 1fr;
-  grid-template-rows: auto;
+  grid-template-rows: 5em auto;
   grid-gap: 1em;
 
   grid-template-areas: 
-  ". top ."
+  "top top top"
   ". mark ."
   ". in ."
   ". link .";
@@ -26,15 +26,17 @@
 
 .App-header {
   grid-area: top;
-  font-family: 'Droid Serif', serif;
-  background-color: coral;
-  padding: 1em;
-  letter-spacing: 2px;
-  line-height: 1.2em;
-  color: rgb(255, 255, 255);
-  font-size: .7em;
+  font-family: 'Martel', serif;
+  background-color: azure;  
+  padding: 1.2em;
+  letter-spacing: 1px;
+  line-height: 1.4em;
+  color: black;
+  font-size: .8em;
+  font-weight: lighter;
+  justify-content: center;
   text-align: center;
-  border-radius: 14px;
+  border-radius: 4px;
 }
 
 .App-link {
@@ -52,9 +54,9 @@
   height: 5em;
   font-family: 'Cutive', serif;
   font-size: 1.6em;
-  background-color: cyan;
+  background: linear-gradient(to right, #FFFF9D , #C5C51C);  
   border-radius: 14px;
-  letter-spacing: 1px;
+  /* letter-spacing: 1px; */
   
 }
 .In {
