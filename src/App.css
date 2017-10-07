@@ -3,9 +3,9 @@
 
 .App {
   font-family: 'Roboto', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   display: grid;
-  justify-content: space-around;
+  justify-content: stretch;
   grid-template-columns: 1fr auto 1fr;
   grid-template-rows: 5em auto;
   grid-gap: 1em;
