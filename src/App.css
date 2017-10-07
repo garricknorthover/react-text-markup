@@ -27,7 +27,7 @@
 .App-header {
   grid-area: top;
   font-family: 'Martel', serif;
-  background-color: azure;  
+  background-color: #CCF1F1;  
   padding: 1.2em;
   letter-spacing: 1px;
   line-height: 1.4em;
@@ -54,7 +54,7 @@
   height: 5em;
   font-family: 'Cutive', serif;
   font-size: 1.6em;
-  background: linear-gradient(to right, #FFFF9D , #C5C51C);  
+  background: linear-gradient(to right, #E9EB77 , #C5C51C);  
   border-radius: 14px;
   /* letter-spacing: 1px; */
   
